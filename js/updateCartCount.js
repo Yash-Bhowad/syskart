@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function updateCartCount() {
-    fetch("cart_count.php")
+    fetch("../assets/cart_count.php")
         .then(response => response.text())
         .then(count => {
             document.getElementById("cart-count").innerText = count;
